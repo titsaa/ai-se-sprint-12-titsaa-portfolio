@@ -2,10 +2,10 @@ import type { Profile } from "../types";
 
 export const profile: Profile = {
   name: "Titsa'a Ndipowa",
-  title: "Software Engineer",
+  title: "Full-Stack MERN Developer",
   blurb:
-    "I build thoughtful, accessible web applications with React and TypeScript, turning ideas into polished digital experiences.",
-  email: "titsaa@example.com",
+    "TripleTen Software Engineering graduate building full-stack web applications with MongoDB, Express, React, and Node.js. I write clean, typed, accessible code and enjoy taking features from database schema to polished interface.",
+  contactFormUrl: "https://formspree.io/f/YOUR_FORM_ID",
   githubUrl: "https://github.com/titsaa",
   linkedinUrl: "#",
   locationUrl: "https://www.google.com/maps/search/Maryland,+USA",

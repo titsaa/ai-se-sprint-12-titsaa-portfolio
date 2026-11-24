@@ -9,8 +9,8 @@ export const projects: Project[] = [
     id: "image-gallery",
     name: "Image Gallery",
     description: [
-      "A responsive image gallery for browsing and discovering visual content.",
-      "Built with modern React patterns and a polished, accessible interface.",
+      "A responsive gallery for browsing and viewing image collections across any screen size.",
+      "Built with reusable React components, semantic markup, and accessible keyboard navigation.",
     ],
     image: imageGallery,
     githubUrl: "https://github.com/titsaa/ai-se_image-gallery",
@@ -20,8 +20,8 @@ export const projects: Project[] = [
     id: "flashcards",
     name: "Flashcards",
     description: [
-      "A study tool for creating and reviewing flashcards.",
-      "Designed to make learning sessions focused, repeatable, and easy to navigate.",
+      "A study app for creating flashcard decks and reviewing them in focused sessions.",
+      "Manages deck and card state cleanly so study progress stays predictable and easy to follow.",
     ],
     image: flashcards,
     githubUrl: "https://github.com/titsaa/ai-se_project_flashcards",
@@ -31,8 +31,8 @@ export const projects: Project[] = [
     id: "workspace-hub",
     name: "WorkspaceHub",
     description: [
-      "A productivity workspace for organizing projects and daily work.",
-      "Uses reusable UI patterns and responsive layouts for an efficient experience.",
+      "A productivity dashboard for organizing projects, tasks, and daily work in one place.",
+      "Composed from reusable UI patterns with a responsive layout that adapts from desktop to mobile.",
     ],
     image: workspaceHub,
     githubUrl: "https://github.com/titsaa/ai-se_project_workspacehub",
@@ -42,8 +42,8 @@ export const projects: Project[] = [
     id: "mesh-ai",
     name: "MeshAI",
     description: [
-      "An AI-focused project exploring connected tools and useful product workflows.",
-      "Built as a practical application for experimenting with modern web technologies.",
+      "An AI-powered application that connects tools into practical, user-focused product workflows.",
+      "Built with React and TypeScript, with ESLint and continuous integration enforcing code quality.",
     ],
     image: meshAi,
     githubUrl: "https://github.com/titsaa/ai-se_project_mesh-ai",

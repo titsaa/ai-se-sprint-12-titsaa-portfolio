@@ -11,11 +11,9 @@ export function Projects() {
   }
 
   return (
-    <section className="projects" id="projects">
-      <div className="projects__heading">
-        <p className="projects__eyebrow">Selected work</p>
-        <h2>Projects</h2>
-      </div>
+    <section className="projects section" id="projects">
+      <p className="section__eyebrow">Selected work</p>
+      <h2 className="section__title">Projects</h2>
 
       <ul className="projects__grid">
         {projects.slice(0, numberShown).map((project) => (
@@ -25,7 +23,7 @@ export function Projects() {
 
       {projects.length > 3 && numberShown < projects.length && (
         <button
-          className="projects__show-more"
+          className="button button_secondary projects__show-more"
           type="button"
           onClick={showMore}
         >

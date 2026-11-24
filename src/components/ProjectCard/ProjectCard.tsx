@@ -24,10 +24,20 @@ export function ProjectCard({ project }: ProjectCardProps) {
         </div>
 
         <div className="project-card__links">
-          <a href={project.githubUrl} target="_blank" rel="noreferrer">
+          <a
+            className="button button_primary"
+            href={project.githubUrl}
+            target="_blank"
+            rel="noreferrer"
+          >
             Code
           </a>
-          <a href={project.liveUrl} target="_blank" rel="noreferrer">
+          <a
+            className="button button_secondary"
+            href={project.liveUrl}
+            target="_blank"
+            rel="noreferrer"
+          >
             Live
           </a>
         </div>

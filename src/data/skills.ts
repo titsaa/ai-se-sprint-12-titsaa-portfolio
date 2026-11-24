@@ -7,14 +7,14 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     category: "Frontend",
-    items: ["React", "Vite", "Responsive Design"],
+    items: ["React", "Vite", "Responsive Design", "Accessibility"],
   },
   {
     category: "Backend",
-    items: ["Node.js", "Express", "REST APIs", "MongoDB"],
+    items: ["Node.js", "Express", "MongoDB", "REST APIs"],
   },
   {
     category: "Tools",
-    items: ["Git", "Docker", "GitHub Actions", "Figma", "AWS", "Vercel"],
+    items: ["Git", "GitHub Actions", "Docker", "Figma", "AWS", "Vercel"],
   },
 ];

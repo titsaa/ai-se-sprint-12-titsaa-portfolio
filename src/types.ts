@@ -2,7 +2,7 @@ export interface Profile {
   name: string;
   title: string;
   blurb: string;
-  email: string;
+  contactFormUrl: string;
   githubUrl: string;
   linkedinUrl: string;
   locationUrl: string;
