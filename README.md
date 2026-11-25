@@ -2,7 +2,7 @@
 
 A responsive, single-page portfolio showcasing my projects, skills, and contact details as a full-stack MERN developer and TripleTen Software Engineering graduate.
 
-**Live site:** _coming soon (Vercel preview link)_
+**Live site:** [ai-se-sprint-12-titsaa-portfolio-seven.vercel.app](https://ai-se-sprint-12-titsaa-portfolio-seven.vercel.app)
 
 ## Stack
 
