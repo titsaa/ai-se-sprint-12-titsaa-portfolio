@@ -41,11 +41,6 @@
   resize: vertical;
 }
 
-.contact-form__honeypot {
-  position: absolute;
-  left: -9999px;
-}
-
 .contact-form__submit {
   justify-self: start;
   border-color: var(--color-text-inverse);
@@ -55,16 +50,6 @@
 
 .contact-form__submit:hover {
   background-color: var(--color-hover-secondary);
-}
-
-.contact-form__submit:disabled {
-  opacity: 0.6;
-  cursor: wait;
-}
-
-.contact-form__status {
-  min-height: 1.6em;
-  color: var(--color-text-muted-inverse);
 }
 
 @media (max-width: 640px) {

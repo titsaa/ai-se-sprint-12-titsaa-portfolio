@@ -1,8 +1,8 @@
 import type { Project } from "../types";
-import imageGallery from "../assets/projects/image-gallery.svg";
-import flashcards from "../assets/projects/flashcards.svg";
-import workspaceHub from "../assets/projects/workspacehub.svg";
-import meshAi from "../assets/projects/mesh-ai.svg";
+import imageGallery from "../assets/projects/image-gallery.png";
+import flashcards from "../assets/projects/flashcards.png";
+import workspaceHub from "../assets/projects/workspacehub.png";
+import meshAi from "../assets/projects/mesh-ai.png";
 
 export const projects: Project[] = [
   {
@@ -14,7 +14,7 @@ export const projects: Project[] = [
     ],
     image: imageGallery,
     githubUrl: "https://github.com/titsaa/ai-se_image-gallery",
-    liveUrl: "#",
+    liveUrl: "https://titsaa.github.io/ai-se_image-gallery/",
   },
   {
     id: "flashcards",
@@ -25,7 +25,7 @@ export const projects: Project[] = [
     ],
     image: flashcards,
     githubUrl: "https://github.com/titsaa/ai-se_project_flashcards",
-    liveUrl: "#",
+    liveUrl: "https://titsaa.github.io/ai-se_project_flashcards/",
   },
   {
     id: "workspace-hub",
@@ -36,7 +36,7 @@ export const projects: Project[] = [
     ],
     image: workspaceHub,
     githubUrl: "https://github.com/titsaa/ai-se_project_workspacehub",
-    liveUrl: "#",
+    liveUrl: "https://ai-se-project-workspacehub-2iqe.vercel.app/login",
   },
   {
     id: "mesh-ai",
@@ -47,6 +47,6 @@ export const projects: Project[] = [
     ],
     image: meshAi,
     githubUrl: "https://github.com/titsaa/ai-se_project_mesh-ai",
-    liveUrl: "#",
+    liveUrl: "https://mesh-ai.crabdance.com/",
   },
 ];

@@ -1,36 +1,21 @@
-import { useState, type FormEvent } from "react";
+import type { FormEvent } from "react";
 import { profile } from "../../data/profile";
 import "./ContactForm.css";
 
-type Status = "idle" | "sending" | "sent" | "error";
-
-const statusMessages: Record<Status, string> = {
-  idle: "",
-  sending: "",
-  sent: "Thanks! Your message has been sent. I'll get back to you soon.",
-  error: "Something went wrong. Please try again in a moment.",
-};
-
 export function ContactForm() {
-  const [status, setStatus] = useState<Status>("idle");
-
-  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
+  function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    const form = event.currentTarget;
-    setStatus("sending");
+    const data = new FormData(event.currentTarget);
+    const name = String(data.get("name"));
+    const email = String(data.get("email"));
+    const message = String(data.get("message"));
 
-    try {
-      const response = await fetch(profile.contactFormUrl, {
-        method: "POST",
-        body: new FormData(form),
-        headers: { Accept: "application/json" },
-      });
-      if (!response.ok) throw new Error(`Request failed: ${response.status}`);
-      form.reset();
-      setStatus("sent");
-    } catch {
-      setStatus("error");
-    }
+    const subject = `Portfolio message from ${name}`;
+    const body = `${message}\n\nFrom: ${name} <${email}>`;
+
+    window.location.href = `mailto:${profile.email}?subject=${encodeURIComponent(
+      subject,
+    )}&body=${encodeURIComponent(body)}`;
   }
 
   return (
@@ -68,27 +53,9 @@ export function ContactForm() {
         />
       </label>
 
-      {/* Honeypot field: Formspree discards submissions where it's filled in */}
-      <input
-        className="contact-form__honeypot"
-        name="_gotcha"
-        type="text"
-        tabIndex={-1}
-        autoComplete="off"
-        aria-hidden="true"
-      />
-
-      <button
-        className="button contact-form__submit"
-        type="submit"
-        disabled={status === "sending"}
-      >
-        {status === "sending" ? "Sending…" : "Send message"}
+      <button className="button contact-form__submit" type="submit">
+        Send message
       </button>
-
-      <p className="contact-form__status" role="status">
-        {statusMessages[status]}
-      </p>
     </form>
   );
 }
