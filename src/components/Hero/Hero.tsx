@@ -13,7 +13,7 @@ export function Hero() {
         <a className="button button_primary" href="#projects">
           View my work
         </a>
-        <a className="button button_secondary" href="#contact">
+        <a className="button button_secondary" href={`mailto:${profile.email}`}>
           Get in touch
         </a>
       </div>

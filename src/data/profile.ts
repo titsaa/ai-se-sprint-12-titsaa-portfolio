@@ -10,5 +10,5 @@ export const profile: Profile = {
   linkedinUrl: "#",
   locationUrl: "https://www.google.com/maps/search/Maryland,+USA",
   locationText: "Maryland, USA",
-  resume: "/resume.txt",
+  resume: "/Titsaa_Ndipowa_MERN_Developer_Resume.pdf",
 };
