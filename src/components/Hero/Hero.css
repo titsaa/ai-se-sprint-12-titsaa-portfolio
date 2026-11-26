@@ -1,0 +1,43 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 88svh;
+  padding: calc(var(--header-height) + 64px) var(--gutter) 96px;
+  background-color: var(--color-bg-secondary);
+}
+
+.hero__greeting {
+  color: var(--color-text-secondary);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.hero__name {
+  margin-top: 8px;
+  font-size: clamp(44px, 8vw, 80px);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+.hero__title {
+  margin-top: 16px;
+  color: var(--color-text-secondary);
+  font-size: clamp(20px, 3vw, 28px);
+  font-weight: 600;
+}
+
+.hero__blurb {
+  max-width: 640px;
+  margin-top: 24px;
+  color: var(--color-text-secondary);
+  font-size: 18px;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 40px;
+}
